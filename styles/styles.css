@@ -25,6 +25,7 @@ body {
     --white-color: #fff;
     --Slate-color: #434455;
     --cloud-color: #F4F4FD;
+    --lightslate-color: #8E8F99;
 }
 
 .logo {
@@ -102,7 +103,7 @@ img {
     color: var(--Ocean-color);
 }
 
-.pages-font-weigt{
+.pages-font-weight{
     font-weight: 500;
 }
 
@@ -302,7 +303,8 @@ footer {
 .customer-box {
     width: 168px;
     height: 88px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 4px;
+    border: 1px solid var(--lightslate-color);
 }
 
 .goals-logobox {

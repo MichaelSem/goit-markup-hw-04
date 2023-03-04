@@ -26,6 +26,7 @@ body {
     --Slate-color: #434455;
     --cloud-color: #F4F4FD;
     --lightslate-color: #8E8F99;
+    --green-color: #31D0AA;
 }
 
 .logo {
@@ -42,7 +43,6 @@ body {
 
 img {
     display: block;
-    width: 100%;
 }
 
 .member-image {
@@ -109,7 +109,9 @@ img {
 
 .main-page-bg {
     padding: 188px 0;
-    background: var(--Navy-blue-color);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)) ,  url(/images/people-office\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .title {
@@ -268,8 +270,9 @@ footer {
     transition: 0.5s;
 }
 
-.buttons-in-list:hover {
+.buttons-in-list:is(:hover, :focus) {
     background-color: var(--Ocean-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     color: var(--white-color);
 }
 
@@ -300,7 +303,15 @@ footer {
     gap: 24px;
 }
 
+.customer-icon {
+    width: 104px;
+    height: 56px;
+}
+
 .customer-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 168px;
     height: 88px;
     border-radius: 4px;
@@ -308,6 +319,9 @@ footer {
 }
 
 .goals-logobox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 264px;
     height: 112px;
     background-color: var(--cloud-color);
@@ -322,8 +336,48 @@ footer {
 }
 
 .circle-membercard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: #4D5AE5;
+}
+
+.footer-flex {
+    display: flex;
+    gap: 120px;
+}
+
+.icons-footer {
+    gap: 24px;
+    display: flex;
+    list-style: none;
+}
+
+.circle-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.circle-footer:is(:hover, :focus) {
+    background-color: var(--green-color);
+}
+
+.footer-iconstitle {
+    font-size: 16px; 
+    margin-bottom: 16px;
+    color: var(--white-color);
+    line-height: 1.5;
+}
+
+.footer-icon {
+    width: 24px;
+    height: 24px;
 }

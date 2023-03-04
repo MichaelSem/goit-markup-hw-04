@@ -107,8 +107,10 @@ img {
     font-weight: 500;
 }
 
-.main-page-bg {
+.main-page-bg { /* Максимальна ширина картинки не дозволяе бекграунду розстягнутися на весь єкран */
     padding: 188px 0;
+    max-width: 1440px;
+    margin: 0 auto;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)) ,  url(/images/people-office\ 1.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -318,6 +320,10 @@ footer {
     border: 1px solid var(--lightslate-color);
 }
 
+.customer-box:is(:hover, :focus) {
+    filter: invert(41%) sepia(10%) saturate(4056%) hue-rotate(196deg) brightness(82%) contrast(108%);
+}
+
 .goals-logobox {
     display: flex;
     justify-content: center;
@@ -342,7 +348,11 @@ footer {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #4D5AE5;
+    background-color: var(--Iris-color);
+}
+
+.circle-membercard:is(:hover, :focus) {
+    background-color: var(--Ocean-color);
 }
 
 .footer-flex {
